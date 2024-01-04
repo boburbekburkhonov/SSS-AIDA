@@ -3,12 +3,19 @@ body {
 }
 
 .wrapper {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  width: 560px !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-signin-heading {
+  color: #286090;
 }
 
 .form-signin {
-  max-width: 380px;
+  max-width: 480px;
   padding: 15px 35px 45px;
   margin: 0 auto;
   background-color: #fff;
@@ -62,8 +69,12 @@ body {
 }
 
 .account-signup {
-  max-width: 380px;
+  max-width: 480px;
   padding: 15px 35px;
   margin: 0 auto;
   background-color: rgba(0,0,0,0.1);
+}
+
+input::placeholder {
+  color: red;
 }
